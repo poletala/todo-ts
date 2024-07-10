@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='../styles/fonts.css'>
+    <link rel="stylesheet" href='../styles/index.css'>
+    <title>TODO EDIT</title>
+</head>
+<body>
+    <root>
+        <header>
+            <!-- <time>00</time>
+            <time>00</time> -->
+            <h1>
+                <button 
+                    class="back-btn" 
+                    onclick="location.href='../index.html'" 
+                    type="button">
+                </button>
+                Edit Task
+            </h1>
+        </header>
+        <content>
+            <textarea 
+                placeholder="Title" 
+                rows="1" 
+                maxlength="32" 
+                class="edited-title" 
+                name="title-edit"
+                value=""></textarea>
+            <textarea 
+                placeholder="Detail" 
+                rows="2" 
+                class="edited-detail"
+                name="detail-edit"
+                value=""></textarea>
+            <form class="priority">
+                <span>Priority</span>
+                <input type="radio" name="priority" value="3low" checked> low
+                <input type="radio" name="priority" value="2medium"> medium
+                <input type="radio" name="priority" value="1high"> high
+            </form>
+            <form class="deadline">
+                <span>Deadline</span>
+                <input type="date" id="deadline-input">
+            </form>
+            <div class="edit-buttons">
+                <button class="update-button" onclick="updateTask2()" type="button">
+                    Update
+                </button>
+                <button class="cancel-button" onclick="location.href='../index.html'" type="button">
+                    Cancel
+                </button>
+            </div>
+        </content>
+       
+    </root>
+    
+</body>
+<script src="../scripts/editTask.js"></script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./styles/fonts.css'>
+    <link rel="stylesheet" href='./styles/index.css'>
+    <title>ToDo List</title>
+</head>
+<body>
+    <root>
+        <header>
+            <time>00</time>
+            <time>0</time>
+            <h1>TODO APP</h1>
+        </header>
+        <main>
+            <form>
+                <label for="sort-by"></label>
+                <select name="sort" id="sort-select" 
+
+                >
+                  <option selected value="">sort by</option>
+                  <option value="deadline">deadline</option>
+                  <option value="priority">priority</option>
+                </select>
+              </form>
+            <ul id="todo-bar">
+            </ul>
+            <button 
+            class="todo-add" 
+            onclick="location.href='./pages/addTask.html'" 
+            type="button">+</button>
+        </main>
+        <footer>
+            <div class="todo-all">
+                <image src="./assets/Playlist.png"
+                onclick='taskBTN()'>
+                </image>
+                <p>Unfinished</p>
+            </div>
+            <div class="todo-completed">
+                <image src="./assets/Tick.png"
+                onclick="location.href='./pages/completedTasks.html'" 
+                type="button"></image>
+                <p>Completed</p>
+            </div>
+        </footer>
+    </root>
+</body>
+<script src="./scripts/index.js"></script>
+</html>
